@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .Hero{
     width: 100vw;
     height: 100vh;
-    padding: 70px 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
@@ -29,13 +33,23 @@ nav a{
     font-size: 18px;
     margin-left: 10px;
 }
+
 nav a:hover{
     text-decoration: underline;
     text-underline-offset: 5px;
 }
  nav h1{
      color: aliceblue;
-     font-size: 23px;
+     font-size: 20px;
+     background: seashell;
+     border-radius: 50%;
+     border-color: green;
+     background: plum;
+     width: 45px;
+     height: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
  
  nav button{
@@ -44,25 +58,233 @@ nav a:hover{
      cursor: pointer;
  }
 .preview{
-    height: 92.7%;
+    width: 100%;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    padding-left: 120px;
+}
+
+ul{
+    padding: 20px;
 }
 
 li{
     margin-bottom: 10px;
 }
 
+#side{
+    background: #222;
+    height: 100vh;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 250px;
+    color: aliceblue; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: -9;
+}
+
+#side h2{
+   width: 150px;
+}
+
+#skills{
+  width: 20%;
+  height: 400px
+}
+
+#sec-field{
+  width: 40%;
+  height: 400px;
+}
+
 #sec-field li{
     font-size: 18px;
 }
+
 footer{
     background: #000;
-    padding: 10px;
-    text-align: center;
+    height: 7vh;
     color: #666;
     word-spacing: 2px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1148px){
+    .preview{
+        flex-direction: column;
+        width: 100%;
+        max-width: 70%;
+        margin: auto;
+        padding-top: 70px;
+        gap: 1rem;
+    }
+    #sec-field{
+        width: 100%;
+        height:auto;
+        margin-left: 80px;
+    }
+    #skills{
+        width: 100%;
+        height: auto;
+        margin-left: 80px;
+    }
+    #skills ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    #sec-field ul {
+        list-style: none;
+    }
+    #skills ul li{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    nav{
+        padding: 0 20px;
+    }
+    #skills, #sec-field{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 980px){
+    ul{
+        padding: 10px;
+    }
+    #skills ul li, #sec-field ul li{
+       font-size: 14px;
+    }
+    #side{
+        width: 200px;
+    }
+    #side h2{
+        font-size: 20px ;
+    }
+    .preview{
+        padding-top: 5%;
+        flex-direction: column;
+    }
+    #sec-field{
+        width: 100%;
+        height: auto;
+    }
+    #skills{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    nav h1{
+     font-size: 19px;
+    }
+    .rgt{
+        opacity: 0;
+    }
+
+    #side{
+        width: 100%;
+        height: 11%;
+        top: 8%;
+        left: 0;
+    }
+    #side h2{
+        width: 100%;
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .preview{
+        padding-left: 0;
+        padding-top: 18%;
+        flex-direction: column;
+    }
+    #skills, #sec-field{
+        margin-left: 0;
+    }
+    #sec-field{
+        width: 100%;
+        height: auto;
+    }
+    #skills{
+        width: 100%;
+        height: auto;
+    }
+    ul{
+        padding: 10px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .Hero{
+        height: auto;
+    }
+    nav{
+        padding-bottom: 10px;
+    }
+    nav h1{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .rgt{
+        opacity: 0;
+    }
+
+    #side{
+        width: 100%;
+        height: 8%;
+        top: 7%;
+        left: 0;
+        z-index: 100;
+        padding-bottom: 5px;
+    }
+    #side h2{
+        width: 100%;
+        padding-top: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .preview{
+        padding-left: 0;
+        padding-top: 25%;
+        flex-direction: column;
+        margin-top: 12%;
+    }
+    #skills, #sec-field{
+        margin-left: 0;
+    }
+    #sec-field{
+        width: 100%;
+        height: auto
+    }
+    #skills{
+        width: 100%;
+        height: auto;
+    }
+    ul{
+        padding: 5px;
+    }
+
+    footer{
+        word-spacing: 0;
+        font-size: 14px;
+    }
+
 }

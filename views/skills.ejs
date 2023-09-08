@@ -11,22 +11,18 @@
     <div class="Hero">
         <%- include('partials/nav.ejs') %> 
         <div class="preview">
-            <div style="background: #222;
-            height: 100vh; position: fixed; left: 0; top: 0; width: 250px;
-            color: aliceblue; display: flex; justify-content: center; align-items: center; z-index: -9;"
-            >
-                <h2 style="z-index: -9;"
-                >Skills and <br> Competencies</h2>
+            <div id='side'>
+                <h2>Skills and Competencies</h2>
             </div>
-            <fieldset  style="min-height: 300px;">
+            <fieldset id="skills">
                <legend style="text-align: center; font-size: 18px;" >Digital Skills</legend>
-                <ul style="padding: 20px;">
+                <ul>
                     <li>HTML5</li>
                     <li>CSS3</li>
                     <li>JAVASCRIPT</li>
                     <li>TYPESCRIPT</li>
                     <li>BOOTSTRAP</li>
-                    <li>REACT JS</li>
+                    <li>REACTJS</li>
                     <li>NODEJS</li>
                     <li>MYSQL</li>
                     <li>SQL</li>
@@ -34,9 +30,9 @@
                     <li>CHAKRA UI</li>
                 </ul>
             </fieldset>
-            <fieldset style="min-height: 350px;" id="sec-field">
+            <fieldset id="sec-field">
                <legend style="text-align: center; font-size: 18px;">Soft Skills</legend>
-                <ul style="padding: 20px;">
+                <ul>
                     <li>An excellent team player</li>
                     <li>Excellent communication skills</li>
                     <li>Proactive with a result oriented mindset</li>
