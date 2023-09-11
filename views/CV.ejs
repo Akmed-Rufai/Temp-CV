@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CV.css">
-    <title>Mohammed Blog</title>
+    <title>Mohammed Cv</title>
 </head>
 <body>
     <div class="Hero">
@@ -14,7 +15,7 @@
             <div class="main-info" style='padding: 20px; color: #f6f6f6;' >
               <h1>Hi, My Name is</h1>
               <h2>Mohammed Rufai</h2>
-              <p style="line-height: 30px; margin-bottom: 12px; font-size: 18px; text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam molestias quod deleniti modi. Fuga, laborum voluptatibus? uam a distinctio in sit recusandae ab repudiandae maxime adipisci! Accusamus soluta magnam dolorem temporibus assumenda quasi! Atque facilis repellendus laudantium voluptas dicta?</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam molestias quod deleniti modi. Fuga, laborum voluptatibus? uam a distinctio in sit recusandae ab repudiandae maxime adipisci! Accusamus soluta magnam dolorem temporibus assumenda quasi! Atque facilis repellendus laudantium voluptas dicta?</p>
               <button class="btn" onclick="location.href='mohammed.pdf#toolbar=0'">Preview</button>
               <button class="btn" onclick="location.href='downloads'">Download</button>
             </div>
@@ -24,5 +25,13 @@
             &copy; CopyRight Mohammed Rufai 2023
         </footer>
     </div>
+    <script>
+        let menu = document.getElementById('menu')
+        let show = document.getElementsByClassName('show')[0]
+
+        menu.onclick = () =>{
+            show.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
