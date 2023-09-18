@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-js@2.0.0/index.min.js"></script>
     <link rel="stylesheet" href="CV.css">
     <title>Mohammed Cv</title>
 </head>
@@ -15,7 +15,9 @@
             <div class="main-info" style='padding: 20px; color: #f6f6f6;' >
               <h1>Hi, My Name is</h1>
               <h2>Mohammed Rufai</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam molestias quod deleniti modi. Fuga, laborum voluptatibus? uam a distinctio in sit recusandae ab repudiandae maxime adipisci! Accusamus soluta magnam dolorem temporibus assumenda quasi! Atque facilis repellendus laudantium voluptas dicta?</p>
+              <p class='typewriter one'>Lorem ipsum dolor sit amet.</p>
+              <p class='typewriter two'>Ut enim ad minim veniam.</p>
+              <p class='typewriter three'>Excepteur sint occaecat cupidatat non proident.</p>
               <button class="btn" onclick="location.href='mohammed.pdf#toolbar=0'">Preview</button>
               <button class="btn" onclick="location.href='downloads'">Download</button>
             </div>
@@ -25,13 +27,18 @@
             &copy; CopyRight Mohammed Rufai 2023
         </footer>
     </div>
+
     <script>
         let menu = document.getElementById('menu')
         let show = document.getElementsByClassName('show')[0]
+        let icons = document.getElementById('can')
+
+
 
         menu.onclick = () =>{
-            show.classList.toggle('active')
+          show.classList.toggle('active')
         }
     </script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
