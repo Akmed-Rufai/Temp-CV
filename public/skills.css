@@ -159,7 +159,7 @@ footer{
         width: 100%;
         max-width: 80%;
         margin: auto;
-        padding-top: 10%;
+        padding-top: 8%;
         padding-left: 150px;
         gap: .2rem;
         flex-direction: column;
@@ -308,10 +308,10 @@ footer{
     }
 
 }
-@media screen and (max-width: 560px){
+@media screen and (max-width: 587px){
     .Hero{
         padding-left: 0;
-        padding-top: 10%;
+        padding-top: 5%;
     }
  
     nav{
@@ -326,7 +326,7 @@ footer{
         top: 2px;
     }
     .rgt{
-        opacity: 0;
+        display: none;
     }
     .show ul li a{
         font-size: 15px;
@@ -372,14 +372,17 @@ footer{
 
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 440px){
     .Hero{
         padding-top: 20%;
     }
 }
-@media screen and (max-width: 311px){
+@media screen and (max-width: 370px){
     .Hero{
         height: auto;
-        padding-top: 30%;
+        padding-top: 32%;
+    }
+    .preview{
+        padding-bottom: 30px;
     }
 }

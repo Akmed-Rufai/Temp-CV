@@ -25,7 +25,6 @@ app.get('/downloads', (req, res)=>{
     res.download('./public/mohammed.pdf')
 })
 
-
 app.listen(5000, ()=>{
     console.log('now listening on port 5000');
 })
